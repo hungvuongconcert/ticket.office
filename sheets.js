@@ -54,7 +54,7 @@ function maker(json) {
 document.getElementById('xuLyButton')?.addEventListener('click', function() {
     event.preventDefault();
     var duLieu = document.getElementById('userData').value;
-    const qu = `SELECT C WHERE B = '${duLieu}'`;
+    const qu = `SELECT C WHERE G = '${duLieu}'`;
     const query= encodeURIComponent(qu);
     const url = `${base}&sheet=${sheetName}&tq=${query}`;
     init(url)

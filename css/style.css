@@ -1874,7 +1874,7 @@ video {
 }
 
 .gap-8 {
-    gap: 2rem
+    gap: 0rem
 }
 
 .gap-\[inherit\] {
@@ -5074,6 +5074,7 @@ video {
     background-size: auto;
     background-size: cover;
     background-color:white;
+    padding-bottom: 10%;
     /* background-image: url(img/hero.webp); */
   }
   
@@ -5172,25 +5173,24 @@ video {
   
   .animation{
     margin-top: 10%;
-    margin-bottom: 5%;
     display: flex;
     justify-content: center;
   }
   .cursor{
-    font-size: 100px;
+    font-size: 50px;
     display: inline;
     color: black;
   }
   
   .animated-text{
-    font-size: 100px;
+    font-size: 50px;
     display: inline;
     color: black;
     font-family: __softie_c42278, __softie_Fallback_c42278
   }
   
   .title{
-    font-size: 100px;
+    font-size: 50px;
     display: inline;
     color:black;
     padding-right: 2%;
@@ -5284,6 +5284,10 @@ video {
   .vip{
     border-radius: 20px;
     border: 1px solid #fff;
+  }
+
+  .content-ticket{
+    font-size: 20px;
   }
   
   @media screen and (max-width: 1024px) {
