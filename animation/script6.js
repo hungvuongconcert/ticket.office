@@ -738,7 +738,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
                   })
               }), (0,
               s.jsxs)("h1", {
-                  className: "font-display text-5xl font-black uppercase md:text-5xl",
+                  className: "font-display text-5xl font-black md:text-5xl",
                   children: [(0,
                   s.jsx)(u.Z, {
                       text: "Hung",

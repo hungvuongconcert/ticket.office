@@ -69,46 +69,32 @@
             }
         }
           , d = [{
-            label: "Nhan Su",
+            label: "Ban Nhan Su",
             slug: "aave",
             description: (0,
             t.jsx)(t.Fragment, {
                 children: "Với châm ngôn hoạt động Lo cho 2 - 3 chục người cùng lúc cũng được, miễn mình thật lòng, Nhân Sự luôn là chỗ dựa và nhân tố gắn kết những thành viên của HVC với nhau. Nghe zậy chứ không phải 🚩red flag🚩 đâu à nha, tại thành viên Nhân Sự nào cũng có trái tim to bự hết đó."
             }),
             color: "var(--purple)",
-            disclaimer: "Core features include risk mitigation tools, flash loans, and more.",
+           
             links: [{
-                label: "Website",
-                href: "https://aave.com"
+                label: "",
+                href: ""
             }, {
-                label: "Twitter",
-                href: "https://twitter.com/aaveaave"
+                label: "",
+                href: ""
             }, {
-                label: "Discord",
-                href: "https://discord.com/invite/aave"
+                label: "",
+                href: ""
             }, {
-                label: "Hey",
-                href: "https://hey.xyz/u/aaveaave"
+                label: "",
+                href: ""
             }],
             details: [{
-                label: "Surfaces",
-                value: ["Protocol", "App"],
-                highlight: !0
-            }, {
-                label: "Industry",
-                value: "DeFi"
-            }, {
-                label: "Since",
-                value: "2017"
-            }, {
-                label: "Chains",
-                value: ["Ethereum", "Base", "Arbitrum", "Avalanche", "Optimism", "Polygon", "Metis", "Gnosis"]
-            }, {
-                label: "Status",
-                value: "Active"
+                
             }]
         }, {
-            label: "Truyen Thong",
+            label: " Ban Truyen Thong",
             slug: "family",
             description: (0,
             t.jsx)(t.Fragment, {
@@ -116,92 +102,48 @@
             }),
             color: "var(--orange)",
             links: [{
-                label: "Website",
-                href: "https://family.co"
+                label: "",
+                href: ""
             }, {
-                label: "Twitter",
-                href: "https://twitter.com/family"
+                label: "",
+                href: ""
             }],
-            details: [{
-                label: "Surfaces",
-                value: ["App", "SDK"],
-                highlight: !0
-            }, {
-                label: "Industry",
-                value: "DeFi"
-            }, {
-                label: "Since",
-                value: "2022"
-            }, {
-                label: "Chains",
-                value: ["Ethereum"]
-            }, {
-                label: "Status",
-                value: "Active"
-            }]
+            details: [{}]
         }, {
             slug: "lens",
-            label: "Doi Ngoai",
+            label: "Ban Doi Ngoai",
             description: "Lens is a decentralized protocol for social platforms that offers builders an expansive suite of fully composable social primitives and powerful features they can effortlessly integrate into their products.",
             color: "var(--green)",
             links: [{
-                label: "Website",
-                href: "https://lens.xyz"
+                label: "",
+                href: ""
             }, {
-                label: "Hey",
-                href: "https://hey.xyz/u/lensprotocol"
+                label: "",
+                href: ""
             }, {
-                label: "Twitter",
-                href: "https://twitter.com/lensprotocol"
+                label: "",
+                href: ""
             }, {
-                label: "Discord",
-                href: "https://discord.gg/lensprotocol"
+                label: "",
+                href: ""
             }],
             details: [{
-                label: "Surfaces",
-                value: ["Protocol", "SDK"],
-                highlight: !0
-            }, {
-                label: "Industry",
-                value: "Social"
-            }, {
-                label: "Since",
-                value: "2022"
-            }, {
-                label: "Chains",
-                value: ["Polygon"]
-            }, {
-                label: "Status",
-                value: "Active"
+                
             }]
         }, {
-            label: "Tai Chinh Chien Luoc",
+            label: " Ban Tai Chinh Chien Luoc",
             slug: "sonar",
             description: "Sonar is a mobile-first metaverse where users can listen to music, play games, and talk with their friends in spaces the community creates. They can use text, sound bites, and custom emojis as themselves or as their ”Moji.”",
             color: "var(--orange)",
             links: [{
-                label: "Website",
-                href: "https://sonar.app"
+                label: "",
+                href: ""
             }, {
-                label: "Twitter",
-                href: "https://twitter.com/sonar"
+                label: "",
+                href: ""
             }],
             details: [{
-                label: "Surfaces",
-                value: "App",
-                highlight: !0
-            }, {
-                label: "Industry",
-                value: "Social"
-            }, {
-                label: "Since",
-                value: "2021"
-            }, {
-                label: "Chains",
-                value: ["Ethereum"]
-            }, {
-                label: "Status",
-                value: "Active"
+                
             }]
         }, {
             label: "Dao Dien Nghe Thuat",
@@ -209,31 +151,17 @@
             description: "GHO, developed by Aave Labs, is a decentralized, over-collateralized stablecoin that’s native to the Aave Protocol. It serves as an internet payment layer and as a reliable digital asset for storing value over time.",
             color: "var(--purple)",
             links: [{
-                label: "Website",
-                href: "https://gho.xyz"
+                label: "",
+                href: ""
             }, {
                 label: "Twitter",
-                href: "https://twitter.com/GHOAave"
+                href: ""
             }, {
-                label: "Hey",
-                href: "https://hey.xyz/u/gho"
+                label: "",
+                href: ""
             }],
             details: [{
-                label: "Surfaces",
-                value: "Stablecoin",
-                highlight: !0
-            }, {
-                label: "Industry",
-                value: "DeFi"
-            }, {
-                label: "Since",
-                value: "2023"
-            }, {
-                label: "Chains",
-                value: ["Ethereum"]
-            }, {
-                label: "Status",
-                value: "Active"
+                
             }]
         }, {
             disabled: !0,

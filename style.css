@@ -4916,7 +4916,6 @@ video {
     src: url(/font/192e369fd43210ef-s.p.woff2) format("woff2");
 
 }
-  
   section [class^="container"] {
     padding: 4rem 2rem;
   }
@@ -5014,7 +5013,7 @@ video {
     text-align: left;
   }
   .input {
-    text-transform: uppercase;
+
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 22px;
@@ -5152,15 +5151,9 @@ video {
   
   /* ABOUT */
   
-  @media screen and (min-width: 1024px) {
-  
-    section.about .container,
-    section.testimonials .container {
-      width: 75%;
-    }
-  
-  
-  }
+  /* .aboutus{
+    padding-top: 20%;
+  } */
   
   /* VIDEO */
   .vid-content{
@@ -5221,7 +5214,7 @@ video {
   .header-hvc{
     font-size: 45px;
     font-family: 'Mori', sans-serif;
-    color: #FFFCE1;
+    color: black;
     font-weight: 600;
     padding: 5%;
   }
@@ -5231,14 +5224,15 @@ video {
    .header-hvc{
     font-size: 30px;
     line-height: 30px;
+
    }
   }
   
   .hvc{
     padding: 30px;
     border-radius: 20px;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+    color: black;
   }
   .hvc:hover{
     border: 2px solid #B3ACFF;
@@ -5276,19 +5270,34 @@ video {
       line-height:50px ;
       /* white-space: nowrap; */
     }
+    .tag{
+        width: 50px;
+    }
   }
+
+  
   
   .font{
-    font-family: 'Moon';
+    padding-top: 2%;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: normal;
   }
   .vip{
     border-radius: 20px;
     border: 1px solid #fff;
+   
   }
 
   .content-ticket{
     font-size: 20px;
   }
+
+  .demdien-content{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
   
   @media screen and (max-width: 1024px) {
     .hvc{
@@ -5296,6 +5305,14 @@ video {
     }
     .content-ticket{
       margin-top: 10%;
+    }
+    .demdien-content{
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    .disable{
+        display: none;
     }
   }
   
@@ -5312,7 +5329,7 @@ video {
     justify-content: flex-start;
     font-size: 40px;
     padding: 20px;
-    color: #fff;
+    color: black;
   }
   
   .hvc .content{
@@ -5321,7 +5338,7 @@ video {
     font-size: 20px;
     padding: 20px;
     padding-bottom: 10;
-    color: #fff;
+    color: black;
     text-align: left;
   
   }
@@ -5340,4 +5357,22 @@ video {
   
   /* TICKET */
   
+  .iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .iframe{
+        width: 400px;
+        height: 650px;
+        margin: 0%;
+    }
+  }
+
+
+
+
+
 /* ----------- PRIVATE CSS ----------- */
