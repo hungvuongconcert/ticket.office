@@ -1,5 +1,7 @@
 
-
+html{
+    scroll-behavior: smooth;
+}
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -4916,6 +4918,10 @@ video {
     src: url(/font/192e369fd43210ef-s.p.woff2) format("woff2");
 
 }
+
+    section{
+        transition: background-color 0.3s ease-in-out;
+    }
   section [class^="container"] {
     padding: 4rem 2rem;
   }
@@ -4935,25 +4941,23 @@ video {
     text-decoration: none;
     transition: all 0.3s;
   }
-  
+
   a:not(.btn):hover {
     color: #f5a841;
   }
   
-  section .card,
-  .btn-outline-dark {
-    border: 2px solid #000000;
-    box-shadow: 4px 4px #000000;
-    transition: all 0.4s;
-  }
+
   
   .btn-outline-dark:hover {
     box-shadow: 4px 4px #f5a841;
   }
   
   section .card {
-    max-width: 22rem;
+
+    background-color: transparent;
+    max-width: 35rem;
     margin-inline: auto;
+    border: none;
   }
   
   /* NAVBAR */
@@ -4982,6 +4986,22 @@ video {
       font-size: 1.5rem;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .navbar-nav .nav-item {
+      padding: 0 1rem;
+    }
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+
+    .disable{
+        display: none;
+    
+    }
+  }
+
   
   /* Image*/
   .image-section {
@@ -5005,22 +5025,26 @@ video {
     gap: 10px;
     align-items: center;
     justify-content: row;
+    padding-bottom: 10%;
   }
   
   .input-container .checked{
     display: flex;
     justify-content: flex-start;
     text-align: left;
+    font-family: sans-serif;
+    color: black;
   }
-  .input {
 
+
+  .input {
+    font-family: sans-serif;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0);
     border-radius: 22px;
     border: 1px solid black;
-    border-color: #fff;
+    border-color: black;
     /* box-sizing: border-box; */
-    color: #fff;
+    color: black;
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -5036,10 +5060,12 @@ video {
   }
   
   .button {
+    font-family: sans-serif;
+    font-size: 20px;
     color: black;
     padding: 10px 20px;
     border: 1px solid black;
-    border-color: #fff;
+    border-color: black;
     box-sizing: border-box;
     border-radius: 22px;
     cursor: pointer;
@@ -5057,7 +5083,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.1) 100%);
   }
   
   .content {
@@ -5072,18 +5098,13 @@ video {
     color: #fff;
     background-size: auto;
     background-size: cover;
-    background-color:white;
+    background-size: contain;
     padding-bottom: 10%;
     /* background-image: url(img/hero.webp); */
   }
   
-  section.hero{
-    .header{
-      font-size: 80px;
-      margin-top: -7%;
-      margin-bottom: 10%;
-    }
-  }
+ 
+ 
   
   @media screen and (max-width: 576px) {
     section.hero {
@@ -5156,6 +5177,30 @@ video {
   } */
   
   /* VIDEO */
+
+
+   /* MAIN */
+
+   .main{
+    background-image: url(/material/BG\ \(1\).png);
+    background-position: center;
+    height: 91vh;
+   }
+
+   .main span{
+    z-index: 2;
+    font-size: 100px;
+    font-family: 'Mori';
+    color: white;
+   }
+
+  .main-content{
+    padding-top: 10%;
+  }
+   .main p{
+    color: white;
+   }
+    /* MAIN */
   .vid-content{
     margin-top: -20%;
   }
@@ -5170,24 +5215,27 @@ video {
     justify-content: center;
   }
   .cursor{
-    font-size: 50px;
+    font-size: 60px;
     display: inline;
     color: black;
+    font-family: 'Mori', sans-serif;
   }
   
   .animated-text{
-    font-size: 50px;
+    font-size: 60px;
     display: inline;
     color: black;
-    font-family: __softie_c42278, __softie_Fallback_c42278
+    font-family: 'Mori', sans-serif;
+  
   }
   
   .title{
-    font-size: 50px;
+    font-size: 60px;
     display: inline;
     color:black;
-    padding-right: 2%;
-    font-family: __softie_c42278, __softie_Fallback_c42278
+    padding-right: 1%;
+    font-family: 'Mori', sans-serif;
+  
   }
   /* ANIMATION */
   
@@ -5206,17 +5254,13 @@ video {
   
   /* INFO */
   
-  section.abc{
-    padding-top: 6%;
-    padding-bottom: 6%;
-  }
   
   .header-hvc{
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Mori', sans-serif;
     color: black;
     font-weight: 600;
-    padding: 5%;
+    
   }
   
   
@@ -5231,15 +5275,18 @@ video {
   .hvc{
     padding: 30px;
     border-radius: 20px;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #7C7C6E;
+    color: white;
+    background-color: white;
+    margin-bottom: 10%;
   }
   .hvc:hover{
     border: 2px solid #B3ACFF;
   }
   
   .button-info{
-    color: #BBB5FF;
+    color: #FFFCE1;
+    font-weight: 800;
     padding: 10px 60px;
     border: 3px solid #BBB5FF;
     border-color: #BBB5FF;
@@ -5256,41 +5303,23 @@ video {
   }
   /* INFO */
   
-  /* TICKET */
-  .header-ticket{
-    font-size: 100px;
-    font-family: 'Mori', sans-serif;
-    color: #FFFCE1;
-    font-weight: 600;
-    padding-bottom: 8%;
-  }
-  @media screen and (max-width: 1024px) {
-    .header-ticket{
-      font-size: 50px;
-      line-height:50px ;
-      /* white-space: nowrap; */
-    }
-    .tag{
-        width: 50px;
+  @media (min-width: 576px) {
+    .ticket {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for screens 576px and wider */
     }
   }
 
-  
-  
-  .font{
-    padding-top: 2%;
-    font-family: sans-serif;
-    font-size: 20px;
-    line-height: normal;
-  }
-  .vip{
-    border-radius: 20px;
-    border: 1px solid #fff;
+  @media (min-width: 768px) {
+    .ticket {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for screens 768px and wider */
+    }
    
   }
 
-  .content-ticket{
-    font-size: 20px;
+  @media (min-width: 992px) {
+    .ticket {
+      grid-template-columns: repeat(4, 1fr); /* Four columns for screens 992px and wider */
+    }
   }
 
   .demdien-content{
@@ -5298,38 +5327,23 @@ video {
     padding-right: 20%;
   }
 
-  
-  @media screen and (max-width: 1024px) {
-    .hvc{
-      margin-bottom: 30px;
-    }
-    .content-ticket{
-      margin-top: 10%;
-    }
-    .demdien-content{
-        padding-left: 0;
-        padding-right: 0;
-      }
 
-    .disable{
-        display: none;
-    }
-  }
+
+  
   
   .hvc .header{
     display: flex;
     justify-content: flex-start;
-    font-size: 30px;
-    padding: 20px;
-    color: #FFFCE1;
+    font-size: 50px;
+    font-family: 'Mori', sans-serif;
+    color: black;
   }
   
   .hvc .price{
     display: flex;
     justify-content: flex-start;
-    font-size: 40px;
-    padding: 20px;
-    color: black;
+    font-size: 35px;
+    color: #B9B4FF;
   }
   
   .hvc .content{
@@ -5337,8 +5351,7 @@ video {
     justify-content: flex-start;
     font-size: 20px;
     padding: 20px;
-    padding-bottom: 10;
-    color: black;
+    color: #7C7C6E;
     text-align: left;
   
   }
@@ -5352,6 +5365,7 @@ video {
     border-radius: 22px;
     cursor: pointer;
     transition: background-color 0.3s ease; 
+    
   }
   
   
@@ -5369,10 +5383,51 @@ video {
         height: 650px;
         margin: 0%;
     }
+    .demdien-content{
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+
   }
 
 
+ /* TALENT */
+ .image-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 300px;
 
+	box-sizing: border-box;
+	padding: var(--gap);
 
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+  /* TALENT */
+ 
 
 /* ----------- PRIVATE CSS ----------- */
