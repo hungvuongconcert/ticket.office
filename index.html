@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <html data-wf-domain="3d-hover-864d33.webflow.io" data-wf-page="656fcb77b5160a80c858247c"
+<html data-wf-domain="3d-hover-864d33.webflow.io" data-wf-page="656fcb77b5160a80c858247c"
     data-wf-site="656fcb77b5160a80c85823da">
+
 <head>
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="icon" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.svg" />
     <title>Hung Vuong Concert</title>
     <meta name="next-head-count" content="19" />
     <link rel="preload" href="/font/192e369fd43210ef-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
         data-next-font="size-adjust" />
-    <!-- <link rel="preload" href="font/64579aaceba9f83a-s.p.woff2" as="font" type="font/woff2"
-        crossorigin="anonymous" data-next-font="size-adjust" /> -->
     <link rel="preload" href="font/a2c2e099a5981689-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
         data-next-font="size-adjust" />
     <link rel="preload" href="font/8058cf5fb2d1e7bc-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
         data-next-font="size-adjust" />
-        <link href="card/card.css" rel="stylesheet" type="text/css" />
+    <link href="card/card.css" rel="stylesheet" type="text/css" />
+
     <link rel="preload" href="/style.css" as="style" crossorigin="" />
     <link rel="stylesheet" href="/style.css" crossorigin="" data-n-g="" /><noscript data-n-css=""></noscript>
-    <script defer="" crossorigin="" nomodule="" src="animation/script.js"></script>
-    <script src="/animation/script1.js" defer="" crossorigin=""></script>
-    <script src="animation/script2.js" defer="" crossorigin=""></script>
-    <script src="animation/script3.js" defer="" crossorigin=""></script>
-    <script src="animation/script4.js" defer="" crossorigin=""></script>
-    <script src="animation/script5.js" defer="" crossorigin=""></script>
-    <script src="animation/script6.js" defer="" crossorigin=""></script>
-    <!-- <script src="animation/script7.js" defer="" crossorigin=""></script> -->
-    <!-- <script src="animation/script8.js" defer="" crossorigin=""></script> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- --------------------------------------------------------------------------------->
 </head>
 
 <body>
@@ -47,13 +38,13 @@
                         <a class="nav-link active" aria-current="page" href="#hero">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#thongtin">Đêm Diễn</a>
+                        <a class="nav-link" href="#demdien">Thông tin vé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/demo.html">Đêm diễn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Về Chúng Tôi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Về Chúng Tôi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonials">Đối Tác</a>
@@ -66,69 +57,58 @@
             </div>
         </div>
     </nav>
-    <div id="__next"></div>
+
+    <!-- <div id="__next"></div> -->
+
+    <section class="main" id="main">
+        <div class="overlay">
+            <div class="container-lg ">
+                <div class="row align-items-center"
+                    style="padding-top: 70vh; font-family: 'detail'; font-size: 22px; color: #FFFCE1;">
+                    <div class="col-sm-2">
+                        <p>28.01.23</p>
+                        <p>16:00 - 23:00</p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p>Trường THPT Chuyên Hùng Vương</p>
+                        <p>593 Đại lộ Bình Dương, Hiệp Thành, Thủ Dầu Một, Bình Dương</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- --------------------------------------------------------------------------------- -->
 
-    <section class="" id="video">
+    <section class="video" id="video">
         <div class="container-lg ">
             <div class="row align-items-center">
                 <div class="col-sm-12 ">
                     <div class="relative aspect-video w-full shadow-xl shadow-indigo-500/25 md:rounded-3xl md:bg-indigo-400 md:p-3 [&_video]:aspect-video [&_video]:object-cover md:[&_video]:overflow-hidden md:[&_video]:rounded-xl"
                         style="width: 100%; height: 100%;">
-                        <video src="/media/intro.mp4"  volume="0.1" preload="auto" autoplay="0"  playsinline="" webkit-playsinline="" style="width: 100%; height: 100%;" ></video></div>
-            </div>
-
+                        <video src="material/intro.mp4"> </video>
                     </div>
                 </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- --------------------------------------------------------------------------------- -->
-
-
-
-
-
-    <!-- --------------------------------------------------------------------------------- -->
-
-    <!-- <section class="hero  " id="hero">
+    <section class="hero" id="hero">
         <div class="container-lg">
             <div class="row align-items-center">
-                <div class="col-sm-12">
-             
+                <p class="header-section">Thông tin vé</p>
+                <div class="col-sm-6">
                     <div class="animation">
-                        <span class="title ">We</span> <span class="animated-text" id="animated-text"></span> <span
-                            class="cursor" id="cursor">_</span>
-                    </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
-                    
-                </div>
-                <div class="col-sm-12">
-                    <div class="input-container">
-                        <h5 class="checked">Kiểm tra thông tin vé của bạn tại đây</h5>
-                        <input class="input" type="text" id="userData" placeholder="Nhập đoạn mã từ QR Code...">
-                        <button class="button" id="xuLyButton">Tìm Kiếm</button>
-                        <div class="output"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section> -->
-    <!-- --------------------------------------------------------------------------------->
-    <section class="w-full gap-10 px-4 py-10 md:px-10 md:py-20">
-        <div class="mx-auto flex w-full max-w-5xl flex-col items-center justify-center gap-[inherit]">
-            <div class="grid h-auto w-full auto-rows-min grid-cols-1 gap-4 md:grid-cols-2">
-                <div
-                    class="relative bg-blue-300 flex h-full w-full flex-col rounded-3xl p-6 md:p-10 row-span-3 text-4xl text-indigo-950 md:text-5xl">
-                    <div class="animation">
-                        <span class="title ">We</span> <span class="animated-text" id="animated-text"></span> <span
+                        <span class="title">We</span><span class="animated-text" id="animated-text"></span> <span
                             class="cursor" id="cursor">_</span>
                     </div>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
                     <script>
-                        const words = ["do charity.", "are delighties", "are HVC", "share love", "give hope"];
+                        const words = ["do charity.", "are delighties ✨", "are HVC", "share love", "give hope"];
                         gsap.to("#cursor", {
                             opacity: 0,
                             repeat: -1,
@@ -145,57 +125,302 @@
                             tlMaster.add(tlText);
                         });
                     </script>
-                    
-                </div>
-                <div
-                    class="relative flex h-full w-full flex-col gap-8 rounded-3xl p-6 md:p-10 row-span-3  text-4xl text-indigo-950 md:text-5xl">
-                    <h2 class="font-bold __className_c42278 ">Get to "done done"</h2>
-                </div>
-                <div
-                    class="relative flex h-full w-full flex-col rounded-3xl p-6 md:p-10 row-span-3 justify-between gap-8 bg-fuchsia-300 text-4xl text-fuchsia-950 md:text-5xl">
-                    <div data-w-id="87b4cd18-2a24-bce6-adb6-743cca9c1e5f" class="image-wrap"><img
-                        src="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp"
-                        loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 991px) 90vw, 35vw" width="354"
-                        alt=""
-                        srcset="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc-p-500.png 500w, https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp 708w"
-                        class="image" />
-                    <!-- <div class="shine"></div> -->
-                </div>
-                            
-                        </button>
-                </div><a class="row-span-2" href="/goodbye">
-                    <div
-                        class="relative flex h-full w-full flex-col gap-8 rounded-3xl p-6 md:p-10 group bg-slate-900 text-[64px] font-black leading-[56px] text-white transition-transform hover:scale-[0.99]">
-                        <h2
-                            class="font-display font-black uppercase transition-[letter-spacing] group-hover:tracking-wide">
-                            View our pricing</h2>
-                        <div
-                            class="absolute bottom-4 right-4 h-12 w-12 overflow-hidden rounded-full bg-pink-50 text-slate-900 opacity-25 transition-opacity group-hover:opacity-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true"
-                                class="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 group-hover:translate-x-[150%]">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
-                                class="absolute -left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 group-hover:translate-x-[150%]">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                            </svg></div>
+                    <div class="input-container">
+                        <h5 class="checked">Kiểm tra thông tin vé của bạn tại đây</h5>
+                        <input class="input" type="text" id="userData" placeholder="Nhập đoạn mã từ QR Code...">
+                        <a href="thanks.html">
+                            <button class="button" id="xuLyButton">Tìm Kiếm</button>
+                        </a>
+                        <div class="output"></div>
                     </div>
-                </a>
-            </div>
+                </div>
+                <div class="col-sm-6">
+                    <p style="color: black; font-size: 20px;">
+                        Mỗi chiếc vé không chỉ mở ra cơ hội cho bạn trải nghiệm những buổi tiệc âm nhạc tuyệt vời, mà
+                        còn góp phần mở ra tương lai tươi sáng cho những mảnh đời khó khăn tại Bến Tre.</p>
+                </div>
+
+
+                <div class="col-sm-6">
+                    <div class="hvc">
+                        <div class="header">Ticket</div>
+                        <div class="price">300.000 đ</div>
+                        <div class="col-sm-10 content">Mỗi vé chỉ dành cho 1 người để vào khu vực diễn ra sự kiện</div>
+                        <button class="button-info">Get ticket</button>
+                        <div class="col-sm-10 content">Vé đã mua không được đổi, trả hay huỷ.</div>
+                        <div class="col-sm-10 content">Khi đăng ký trực tuyến, bạn sẽ nhận được vé dưới dạng mã QR,
+                            không có vé giấy. </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div data-w-id="87b4cd18-2a24-bce6-adb6-743cca9c1e5f" class="image-wrap"><img
+                                src="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp"
+                                loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 991px) 90vw, 35vw"
+                                width="354" alt=""
+                                srcset="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc-p-500.png 500w, https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp 708w"
+                                class="image" />
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- --------------------------------------------------------------------------------->
+    <section class="talent">
+        <p class="header-section" style="color: white;">Nghệ sĩ tham gia</p>
+        <div class="image-grid">
+            <img class="image-grid-col-2 image-grid-row-2" src="/material/casi/CONGBOCASI_PHUONGLY2.png"
+                alt="architecture">
+            <img src="/material/casi/CONGBOCASI_PHUONGLY2.png" alt="architecture">
+            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
         </div>
     </section>
-    <!-- --------------------------------------------------------------------------------->
-    
-    <script src="sheets.js" type="text/javascript"></script>
-    <script id="__NEXT_DATA__" type="application/json"
-        crossorigin="">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"DS-SFt8WkpKEMqihy_pDr","nextExport":true,"autoExport":true,"isFallback":false,"locale":"en","locales":["en"],"defaultLocale":"en","scriptLoader":[]}</script>
-        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=656fcb77b5160a80c85823da"
-        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
-    <script src="card/card.js" type="text/javascript"></script>
+    <!-- ---------------------------------GAP -->
+    <section style="padding: 10%;"></section>
+    <!-- ---------------------------------GAP -->
+
+    <section id="demdien" style="padding-left: 5%; padding-right: 5%;">
+        <img src="/map.jpeg" alt="">
+        <div class="col-sm-12 demdien-content">
+            <p>
+                Hùng Vương Concert là chương trình ca nhạc và một chuỗi các hoạt động tình nguyện với mục đích
+                vận động, quyên góp từ thiện, được tổ chức hằng năm tại trường THPT chuyên Hùng Vương, tỉnh Bình
+                Dương. Đây là một chương trình hoành tráng, đặc sắc, được tổ chức quy mô, chuyên nghiệp với sự
+                góp mặt của nhiều ca sĩ, diễn viên được đông đảo khán giả yêu thích.</p>
+
+            <p>Chương trình vừa là món quà tinh thần hấp dẫn sau một mùa học tập căng thẳng cho các bạn trẻ
+                trong khu vực tỉnh Bình Dương và các khu vực lân cận, đồng thời là cánh cửa mở ra vô vàn cơ hội
+                cho các vùng khó khăn, chậm phát triển nói chung và các hộ gia đình, trẻ em khó khăn nói riêng.
+                Ngoài ra Hùng Vương Concert còn là một cơ hội, một sân chơi cho các bạn trẻ trải nghiệm, rèn
+                luyện, mài dũa các kĩ năng khi làm việc một môi trường trẻ trung, năng động, chuyên nghiệp.</p>
+            <p class="disable">
+                Chương trình Hùng Vương Concert không chỉ là một sự kiện giải trí mà còn là dịp để tạo ra sự giao lưu,
+                kết nối giữa cộng đồng sinh viên, giáo viên, và những người hâm mộ nghệ thuật. Các buổi biểu diễn tại
+                chương trình thường mang đến không khí sôi động, tràn ngập năng lượng tích cực, tạo ra một không gian
+                thú vị cho mọi người thưởng thức và chia sẻ niềm đam mê âm nhạc.
+            </p>
+
+            <p class="disable">Ngoài những tiết mục nghệ thuật đặc sắc, Hùng Vương Concert còn là nơi tổ chức các hoạt
+                động tình nguyện nhằm chung tay xây dựng cộng đồng và hỗ trợ những người có hoàn cảnh khó khăn. Việc
+                quyên góp từ thiện và vận động cộng đồng tham gia tạo nên tinh thần đoàn kết, lòng nhân ái, và ý thức xã
+                hội trong các bạn trẻ tham gia chương trình.</p>
+
+
+            <div class="timeline">
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------GAP -->
+        <section style="padding: 10%;"></section>
+        <!-- ---------------------------------GAP -->
+<!-- LOGO SPONSOR -->
+        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="wpb_text_column wpb_content_element  vc_custom_1701756135316">
+                        <div class="wpb_wrapper">
+                            <p class="header-section">Nhà tài trợ</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="/material/logo ntt/MAAY house.JPG"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="/material/logo ntt/lena make up.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="200">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/TKCA.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/cc sneaker.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/Logo Koikeya snack.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/Niyomthai.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/sand.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/seoul.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/sleep on the cloud.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/VGU-Logo 2019.png"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="aboutus" id="about">
+            <h2 class="w-full text-center text-6xl font-black uppercase md:text-8xl __className_c42278"><span
+                    class="text-sky-500 " style="animation-duration:0.05s;animation-timing-function:ease">o</span><span
+                    class="text-blue-500 " style="animation-duration:0.1s;animation-timing-function:ease">u</span><span
+                    class="text-indigo-500"
+                    style="animation-duration:0.15000000000000002s;animation-timing-function:ease">r</span><span
+                    class=" text-indigo-500"
+                    style="animation-duration:0.2s;animation-timing-function:ease;display:inline"> t</span><span
+                    class="text-violet-500 "
+                    style="animation-duration:0.25s;animation-timing-function:ease">e</span><span
+                    class="text-purple-500 "
+                    style="animation-duration:0.30000000000000004s;animation-timing-function:ease">a</span><span
+                    class="text-fuchsia-500 "
+                    style="animation-duration:0.35000000000000003s;animation-timing-function:ease">m</span><span
+                    class="text-pink-500 " style="animation-duration:0.4s;animation-timing-function:ease">m</span><span
+                    class="text-fuchsia-500 "
+                    style="animation-duration:0.45s;animation-timing-function:ease">a</span><span
+                    class="text-purple-500 "
+                    style="animation-duration:0.5s;animation-timing-function:ease">t</span><span
+                    class="text-violet-500 "
+                    style="animation-duration:0.55s;animation-timing-function:ease">e</span><span class="text-blue-500 "
+                    style="animation-duration:0.65s;animation-timing-function:ease">s</span></h2>
+
+            <div class="row align-items-center">
+                <div class="col-sm-12 iframe ">
+                    <iframe src="demo.html" width="1200px" height="700px" frameborder="0"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+        <script src="sheets.js" type="text/javascript"></script>
+        <script id="__NEXT_DATA__" type="application/json"
+            crossorigin="">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"DS-SFt8WkpKEMqihy_pDr","nextExport":true,"autoExport":true,"isFallback":false,"locale":"en","locales":["en"],"defaultLocale":"en","scriptLoader":[]}</script>
+        <script
+            src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=656fcb77b5160a80c85823da"
+            type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+        <script src="card/card.js" type="text/javascript"></script>
 </body>
 
 
