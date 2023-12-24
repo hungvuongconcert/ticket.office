@@ -18,13 +18,7 @@
 
     <link rel="preload" href="/style.css" as="style" crossorigin="" />
     <link rel="stylesheet" href="/style.css" crossorigin="" data-n-g="" /><noscript data-n-css=""></noscript>
-    <script defer="" crossorigin="" nomodule="" src="animation/script.js"></script>
-    <script src="/animation/script1.js" defer="" crossorigin=""></script>
-    <script src="animation/script2.js" defer="" crossorigin=""></script>
-    <script src="animation/script3.js" defer="" crossorigin=""></script>
-    <script src="animation/script4.js" defer="" crossorigin=""></script>
-    <script src="animation/script5.js" defer="" crossorigin=""></script>
-    <script src="animation/script6.js" defer="" crossorigin=""></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- --------------------------------------------------------------------------------->
@@ -68,31 +62,26 @@
 
     <section class="main" id="main">
         <div class="overlay">
-        <div class="container-lg">
-            <div class="row align-items-center">
-               <div class="col-sm-8 main-content">
-                <span>
-                    HUNG VUONG CONCERT</span>
-                    <p>
-                        Hùng Vương Concert là chương trình ca nhạc và một chuỗi các hoạt động tình nguyện với mục đích
-                        vận động, quyên góp từ thiện, được tổ chức hằng năm tại trường THPT chuyên Hùng Vương, tỉnh Bình
-                        Dương. Đây là một chương trình hoành tráng, đặc sắc, được tổ chức quy mô, chuyên nghiệp với sự
-                        góp mặt của nhiều ca sĩ, diễn viên được đông đảo khán giả yêu thích.</p>
-        
-               </div>
-               
-               <!-- <div>
-                <img src="/material/Typo.png" alt="">
-               </div> -->
-            
-        </div>
-        </div>
+            <div class="container-lg ">
+                <div class="row align-items-center"
+                    style="padding-top: 70vh; font-family: 'detail'; font-size: 22px; color: #FFFCE1;">
+                    <div class="col-sm-2">
+                        <p>28.01.23</p>
+                        <p>16:00 - 23:00</p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p>Trường THPT Chuyên Hùng Vương</p>
+                        <p>593 Đại lộ Bình Dương, Hiệp Thành, Thủ Dầu Một, Bình Dương</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- --------------------------------------------------------------------------------- -->
 
-    <section class="" id="video">
+    <section class="video" id="video">
         <div class="container-lg ">
             <div class="row align-items-center">
                 <div class="col-sm-12 ">
@@ -110,6 +99,7 @@
     <section class="hero" id="hero">
         <div class="container-lg">
             <div class="row align-items-center">
+                <p class="header-section">Thông tin vé</p>
                 <div class="col-sm-6">
                     <div class="animation">
                         <span class="title">We</span><span class="animated-text" id="animated-text"></span> <span
@@ -138,48 +128,52 @@
                     <div class="input-container">
                         <h5 class="checked">Kiểm tra thông tin vé của bạn tại đây</h5>
                         <input class="input" type="text" id="userData" placeholder="Nhập đoạn mã từ QR Code...">
-                        <button class="button" id="xuLyButton">Tìm Kiếm</button>
+                        <a href="thanks.html">
+                            <button class="button" id="xuLyButton">Tìm Kiếm</button>
+                        </a>
                         <div class="output"></div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <p style="color: black;">
-                        Hùng Vương Concert là chương trình ca nhạc và một chuỗi các hoạt động tình nguyện với mục đích
-                        vận động, quyên góp từ thiện, được tổ chức hằng năm tại trường THPT chuyên Hùng Vương, tỉnh Bình
-                        Dương. Đây là một chương trình hoành tráng, đặc sắc, được tổ chức quy mô, chuyên nghiệp với sự
-                        góp mặt của nhiều ca sĩ, diễn viên được đông đảo khán giả yêu thích.</p>
+                    <p style="color: black; font-size: 20px;">
+                        Mỗi chiếc vé không chỉ mở ra cơ hội cho bạn trải nghiệm những buổi tiệc âm nhạc tuyệt vời, mà
+                        còn góp phần mở ra tương lai tươi sáng cho những mảnh đời khó khăn tại Bến Tre.</p>
                 </div>
-                
-               
+
+
                 <div class="col-sm-6">
                     <div class="hvc">
-                        <div class="header">VIP Ticket</div>
-                        <div class="price">350.000 đ</div>
-                        <div class="col-sm-10 content">Includes the core and public plugins like ScrollTrigger.</div>
-                        <button class="button-info">Get GSAP</button>
-                        <div class="col-sm-10 content">*Free unless you need a Commercial License. Learn More</div>
+                        <div class="header">Ticket</div>
+                        <div class="price">300.000 đ</div>
+                        <div class="col-sm-10 content">Mỗi vé chỉ dành cho 1 người để vào khu vực diễn ra sự kiện</div>
+                        <button class="button-info">Get ticket</button>
+                        <div class="col-sm-10 content">Vé đã mua không được đổi, trả hay huỷ.</div>
+                        <div class="col-sm-10 content">Khi đăng ký trực tuyến, bạn sẽ nhận được vé dưới dạng mã QR,
+                            không có vé giấy. </div>
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <div class="card">
                         <div data-w-id="87b4cd18-2a24-bce6-adb6-743cca9c1e5f" class="image-wrap"><img
-                            src="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp"
-                            loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 991px) 90vw, 35vw" width="354"
-                            alt=""
-                            srcset="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc-p-500.png 500w, https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp 708w"
-                            class="image" />
+                                src="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp"
+                                loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 991px) 90vw, 35vw"
+                                width="354" alt=""
+                                srcset="https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc-p-500.png 500w, https://assets-global.website-files.com/656fcb77b5160a80c85823da/656fcb77b5160a80c8582483_baecc.webp 708w"
+                                class="image" />
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
     </section>
 
-   
+
     <!-- --------------------------------------------------------------------------------->
     <section class="talent">
+        <p class="header-section" style="color: white;">Nghệ sĩ tham gia</p>
         <div class="image-grid">
-            <img class="image-grid-col-2 image-grid-row-2" src="/material/casi/phuongly7-1702740014750.jpg" alt="architecture">
-            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+            <img class="image-grid-col-2 image-grid-row-2" src="/material/casi/CONGBOCASI_PHUONGLY2.png"
+                alt="architecture">
+            <img src="/material/casi/CONGBOCASI_PHUONGLY2.png" alt="architecture">
             <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
             <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
             <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
@@ -190,7 +184,7 @@
     <!-- ---------------------------------GAP -->
 
     <section id="demdien" style="padding-left: 5%; padding-right: 5%;">
-        <img src="/material/monte-carlo-logo.d856ff4f.png" alt="">
+        <img src="/map.jpeg" alt="">
         <div class="col-sm-12 demdien-content">
             <p>
                 Hùng Vương Concert là chương trình ca nhạc và một chuỗi các hoạt động tình nguyện với mục đích
@@ -214,11 +208,178 @@
                 động tình nguyện nhằm chung tay xây dựng cộng đồng và hỗ trợ những người có hoàn cảnh khó khăn. Việc
                 quyên góp từ thiện và vận động cộng đồng tham gia tạo nên tinh thần đoàn kết, lòng nhân ái, và ý thức xã
                 hội trong các bạn trẻ tham gia chương trình.</p>
+
+
+            <div class="timeline">
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2>Day 1: Night has come</h2>
+                        <p>dasdasdasdasdasdaddasda</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- ---------------------------------GAP -->
         <section style="padding: 10%;"></section>
         <!-- ---------------------------------GAP -->
+<!-- LOGO SPONSOR -->
+        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="wpb_text_column wpb_content_element  vc_custom_1701756135316">
+                        <div class="wpb_wrapper">
+                            <p class="header-section">Nhà tài trợ</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="/material/logo ntt/MAAY house.JPG"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="/material/logo ntt/lena make up.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="200">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/TKCA.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/cc sneaker.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/Logo Koikeya snack.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/Niyomthai.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/sand.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/seoul.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/sleep on the cloud.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center"
+                            data-aos-delay="0">
+
+                            <div class="media position-relative sponsor p-5 mb-6 text-center">
+                                <a href="#">
+                                    <img decoding="async"
+                                        src="material/logo ntt/VGU-Logo 2019.png"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <section class="aboutus" id="about">
             <h2 class="w-full text-center text-6xl font-black uppercase md:text-8xl __className_c42278"><span

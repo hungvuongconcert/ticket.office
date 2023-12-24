@@ -4911,7 +4911,17 @@ video {
     src: url('/font/PPMori-SemiBold.otf') format('opentype');
     /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
   }
+  @font-face {
+    font-family: 'Main'; /* Provide a name for your font */
+    src: url('/font/DFVN\ BRASIKA\ DISPLAY.OTF') format('opentype');
+    /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
+  }
   
+  @font-face {
+    font-family: 'detail'; /* Provide a name for your font */
+    src: url('/font/MONTSERRAT-SEMIBOLD.OTF') format('opentype');
+    /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
+  }
   @font-face {
     font-family: 'Moon';
     font-weight: 300 900;
@@ -5095,12 +5105,12 @@ video {
   }
   
   section.hero {
-    color: #fff;
+    color: black;
     background-size: auto;
     background-size: cover;
     background-size: contain;
     padding-bottom: 10%;
-    /* background-image: url(img/hero.webp); */
+    /* background-image:url(material/lightbackground.png); */
   }
   
  
@@ -5177,16 +5187,31 @@ video {
   } */
   
   /* VIDEO */
-
+ .video{
+    background:url(material/BG\ \(1\).png)
+ }
 
    /* MAIN */
 
    .main{
-    background-image: url(/material/BG\ \(1\).png);
+    background-image: url(/material/BG3.png);
+    object-fit:cover;
     background-position: center;
     height: 91vh;
    }
 
+   @media screen and (max-width: 1024px) {
+    /* Adjust styles for screens with a maximum width of 600px */
+    .main {
+        object-fit: contain;
+    }
+   }
+    @media screen and (min-width: 1024px) {
+        /* Adjust styles for screens with a maximum width of 600px */
+        .main {
+            object-fit: cover;
+        }
+}
    .main span{
     z-index: 2;
     font-size: 100px;
@@ -5276,7 +5301,7 @@ video {
     padding: 30px;
     border-radius: 20px;
     border: 2px solid #7C7C6E;
-    color: white;
+    color: black;
     background-color: white;
     margin-bottom: 10%;
   }
@@ -5323,6 +5348,7 @@ video {
   }
 
   .demdien-content{
+    padding-top: 8%;
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -5392,10 +5418,15 @@ video {
 
 
  /* TALENT */
+
+ .talent{
+    background-image: url(material/BG\ \(1\).png);
+    
+ }
  .image-grid {
 	--gap: 16px;
 	--num-cols: 4;
-	--row-height: 300px;
+	--row-height: 450px;
 
 	box-sizing: border-box;
 	padding: var(--gap);
@@ -5430,4 +5461,118 @@ video {
   /* TALENT */
  
 
+  .header-section{
+    color: black;
+    font-family: 'Main';
+    font-size:90px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  /* TIMELINE */
+  .timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.checkpoint{
+   max-width: 35em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   position: relative;
+}
+.checkpoint div{
+   border: 2px solid #888;
+   border-radius: 1em;
+   padding: 1.5em;
+}
+
+.checkpoint p {
+   line-height: 27px;
+   color: #ccc;
+}
+
+.checkpoint:nth-child(odd){
+   border-left: 3px solid #888;
+   padding-left: 3em;
+   transform: translateX(17em);
+}
+
+.checkpoint:nth-child(even){
+   border-right: 3px solid #888;
+   padding-right: 3em;
+   transform: translateX(-16.94em);
+}
+
+.checkpoint:nth-child(odd)::before,.checkpoint:nth-child(even)::before{
+    content: '';
+    background: #888;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+
+.checkpoint:nth-child(even)::before{
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,.checkpoint:nth-child(even) div::before{
+    content: '';
+    background-color: black;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+    right: -0.5em;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.timeline{
+        width: 80vw;
+    }
+
+    .timeline .checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .timeline .checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline .checkpoint div::before{
+        top: -0.5em;
+        left:50%;
+        transform: translateX(-50%);
+        }
+
+    body{
+        overflow-x: hidden;
+    }
+}
 /* ----------- PRIVATE CSS ----------- */
+   
