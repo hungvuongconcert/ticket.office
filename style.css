@@ -5471,6 +5471,13 @@ video {
 
 
 
+@media screen and (max-width: 1024px) {
+	.header-section{
+        font-size: 50px;
+    }
+    
+}
+
   /* TIMELINE */
   .timeline{
     margin: 5em auto;
