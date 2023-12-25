@@ -4987,7 +4987,7 @@ video {
     color: #f5a841;
   }
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1424px) {
     .navbar-nav .nav-item {
       padding: 0 1rem;
     }
@@ -5110,7 +5110,7 @@ video {
     background-size: cover;
     background-size: contain;
     padding-bottom: 10%;
-    /* background-image:url(material/lightbackground.png); */
+    background-image:url(material/lightbackground.png);
   }
   
  
@@ -5195,9 +5195,10 @@ video {
 
    .main{
     background-image: url(/material/BG3.png);
-    object-fit:cover;
     background-position: center;
     height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
    }
 
    @media screen and (max-width: 1024px) {
@@ -5426,7 +5427,7 @@ video {
  .image-grid {
 	--gap: 16px;
 	--num-cols: 4;
-	--row-height: 450px;
+	--row-height: 55vh;
 
 	box-sizing: border-box;
 	padding: var(--gap);

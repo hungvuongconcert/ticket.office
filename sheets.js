@@ -1,7 +1,7 @@
 const sheetID = '12lLb4t8wNfgIzCZ4HYEGH6xHaO-rdRlpvMugCaGN6ZI';
 const base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
 const sheetName = 'Data';
-const data = [];
+
 const output = document.querySelector('.output');
 
 function init(url) {
@@ -9,6 +9,7 @@ function init(url) {
     fetch(url)
         .then(res => res.text())
         .then(rep => {
+            const data = [];
             console.log(rep);
             const jsData = JSON.parse(rep.substr(47).slice(0, -2));
             console.log(jsData);
@@ -30,13 +31,11 @@ function init(url) {
                 })
                 data.push(row);
             })
-            console.log(data)
-            const storageData = sessionStorage.getItem('data')
-            console.log(storageData)
-          
             sessionStorage.setItem('data', JSON.stringify(data[0]))
-        
-            maker(JSON.parse(storageData));
+            const storageData = sessionStorage.getItem('data')
+            console.log(JSON.parse(storageData))
+            // maker(JSON.parse(storageData));
+            window.location.href='thanks.html'
         })
 }
 
