@@ -7,13 +7,6 @@
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <title>Hung Vuong Concert</title>
-    <meta name="next-head-count" content="19" />
-    <link rel="preload" href="/font/192e369fd43210ef-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
-        data-next-font="size-adjust" />
-    <link rel="preload" href="font/a2c2e099a5981689-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
-        data-next-font="size-adjust" />
-    <link rel="preload" href="font/8058cf5fb2d1e7bc-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
-        data-next-font="size-adjust" />
     <link href="card/card.css" rel="stylesheet" type="text/css" />
 
     <link rel="preload" href="/style.css" as="style" crossorigin="" />
@@ -64,13 +57,13 @@
         <div class="overlay">
             <div class="container-lg ">
                 <div class="row align-items-center"
-                    style="padding-top: 70vh; font-family: 'detail'; font-size: 22px; color: #FFFCE1;">
+                    >
                     <div class="col-sm-2 detail-infomation">
                         <p>28.01.23</p>
                         <p>16:00 - 23:00</p>
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 detail-infomation" >
                         <p>Trường THPT Chuyên Hùng Vương</p>
                         <p>593 Đại lộ Bình Dương, Hiệp Thành, Thủ Dầu Một, Bình Dương</p>
                     </div>
@@ -127,7 +120,7 @@
                     </script>
                     <div class="input-container">
                         <h5 class="checked">Kiểm tra thông tin vé của bạn tại đây</h5>
-                        <input class="input" type="text" id="userData" placeholder="Nhập đoạn mã từ QR Code...">
+                        <input class="input" type="text" id="userData" placeholder="Nhập đoạn mã vé...">
                         <a href="thanks.html">
                             <button class="button" id="xuLyButton">Tìm Kiếm</button>
                         </a>
@@ -143,13 +136,13 @@
 
                 <div class="col-sm-6">
                     <div class="hvc">
-                        <div class="header">Ticket</div>
+                        <div class="header">Vé Thường</div>
                         <div class="price">300.000 đ</div>
-                        <div class="col-sm-10 content">Mỗi vé chỉ dành cho 1 người để vào khu vực diễn ra sự kiện</div>
-                        <button class="button-info">Get ticket</button>
+                        <div class="col-sm-10 content">Mỗi vé chỉ dành cho 1 người để vào khu vực diễn ra sự kiện.</div>
+                        <button class="button-info">Mua vé ngay</button>
                         <div class="col-sm-10 content">Vé đã mua không được đổi, trả hay huỷ.</div>
                         <div class="col-sm-10 content">Khi đăng ký trực tuyến, bạn sẽ nhận được vé dưới dạng mã QR,
-                            không có vé giấy. </div>
+                            không có vé giấy.</div>
                     </div>
                 </div>
 
@@ -173,10 +166,7 @@
         <div class="image-grid">
             <img class="image-grid-col-2 image-grid-row-2" src="/material/casi/CONGBOCASI_PHUONGLY2.png"
                 alt="architecture">
-            <img src="/material/casi/CONGBOCASI_PHUONGLY2.png" alt="architecture">
-            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-            <img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+            
         </div>
     </section>
     <!-- ---------------------------------GAP -->
@@ -184,7 +174,9 @@
     <!-- ---------------------------------GAP -->
 
     <section id="demdien" style="padding-left: 5%; padding-right: 5%;">
+        <p class="header-section">Đêm Diễn</p>
         <img src="/map.jpeg" alt="">
+
         <div class="col-sm-12 demdien-content">
             <p>
                 Hùng Vương Concert là chương trình ca nhạc và một chuỗi các hoạt động tình nguyện với mục đích

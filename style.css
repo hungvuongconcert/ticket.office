@@ -4922,6 +4922,23 @@ video {
     src: url('/font/MONTSERRAT-SEMIBOLD.OTF') format('opentype');
     /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
   }
+
+  @font-face {
+    font-family: 'header-ticket'; /* Provide a name for your font */
+    src: url('/font/MONTSERRAT-BOLD.OTF') format('opentype');
+    /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
+  }
+
+  @font-face {
+    font-family: 'info-ticket'; /* Provide a name for your font */
+    src: url('/font/MONTSERRAT-LIGHTITALIC.OTF') format('opentype');
+    /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
+  }
+
+
+
+
+
   @font-face {
     font-family: 'Moon';
     font-weight: 300 900;
@@ -5195,6 +5212,7 @@ video {
 
    .main{
     background-image: url(/material/BG3.png);
+    /* background-image: url(/material/Banner-ve-QR.gif); */
     background-position: center;
     height: 91vh;
     background-repeat: no-repeat;
@@ -5362,15 +5380,23 @@ video {
     display: flex;
     justify-content: flex-start;
     font-size: 50px;
-    font-family: 'Mori', sans-serif;
+    font-family: 'header-ticket';
     color: black;
   }
+
+  @media screen and (max-width: 1024px) {
+    .hvc .header{
+       font-size: 10px;
+    
+  }
+}
   
   .hvc .price{
     display: flex;
     justify-content: flex-start;
     font-size: 35px;
     color: #B9B4FF;
+    font-family: 'header-ticket';
   }
   
   .hvc .content{
@@ -5581,6 +5607,18 @@ video {
     body{
         overflow-x: hidden;
     }
+}
+
+
+.detail-infomation{
+  padding-top: 60vh; font-family: 'detail'; font-size: 22px; color: #FFFCE1;
+}
+
+@media screen and (max-width: 1024px) {
+	
+.detail-infomation{
+    display: none;
+  }
 }
 /* ----------- PRIVATE CSS ----------- */
    
