@@ -59,6 +59,12 @@ h1 {
     color: #fff;
     font-family: 'Main';
   }
+
+  @media screen and (max-width: 768px) {
+    .output{
+      font-size: 30px;
+    }
+  }
   
   
   .quote {
