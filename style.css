@@ -5145,7 +5145,7 @@ video {
     }
   
     section.hero .header {
-      font-size: 50px;
+      font-size: 35px;
       margin-bottom: 10%;
       white-space: normal;
     word-wrap: break-word;
@@ -5310,7 +5310,7 @@ video {
   
   @media screen and (max-width: 1024px) {
    .header-hvc{
-    font-size: 30px;
+    font-size: 50px;
     line-height: 30px;
 
    }
@@ -5332,6 +5332,7 @@ video {
     color: #FFFCE1;
     font-weight: 800;
     padding: 10px 60px;
+    font-size: 25px;
     border: 3px solid #BBB5FF;
     border-color: #BBB5FF;
     box-sizing: border-box;
@@ -5339,6 +5340,7 @@ video {
     cursor: pointer;
     transition: background-color 0.5s ease; 
     background-color: #000000;
+    
   }
   
   .button-info:hover {
@@ -5384,20 +5386,23 @@ video {
     color: black;
   }
 
-  @media screen and (max-width: 1024px) {
-    .hvc .header{
-       font-size: 10px;
-    
-  }
-}
+
   
   .hvc .price{
     display: flex;
     justify-content: flex-start;
+    padding-left: 10px;
     font-size: 35px;
     color: #B9B4FF;
     font-family: 'header-ticket';
   }
+
+
+  @media screen and (max-width: 1024px) {
+    .hvc .price{
+       justify-content: center;
+      }
+}
   
   .hvc .content{
     display: flex;
@@ -5489,6 +5494,7 @@ video {
  
 
   .header-section{
+    padding-top: 5%;
     color: black;
     font-family: 'Main';
     font-size:90px;
@@ -5620,5 +5626,21 @@ video {
     display: none;
   }
 }
+
+
+.header-section-sponsor{
+    padding-top: 5%;
+    color: black;
+    font-family: 'Main';
+    font-size:50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+	.header-section-sponsor{
+        font-size: 35px;
+      }
+  }
 /* ----------- PRIVATE CSS ----------- */
    

@@ -9,10 +9,12 @@ function init(url) {
     fetch(url)
         .then(res => res.text())
         .then(rep => {
-            const data = [];
+            try {
+                const data = [];
             console.log(rep);
             const jsData = JSON.parse(rep.substr(47).slice(0, -2));
             console.log(jsData);
+            if (!jsData.table.rows.length) throw "Vui lòng nhập lại mã vé"
             const colz = [];
             jsData.table.cols.forEach((heading) => {
                 // if (heading.label) {
@@ -36,20 +38,17 @@ function init(url) {
             console.log(JSON.parse(storageData))
             // maker(JSON.parse(storageData));
             window.location.href='thanks.html'
+            } catch (error) {
+               maker(error)
+            }
         })
 }
 
-function maker(json) {
-    const div = document.createElement('div');
-    output.append(div);
-
-    // Assuming the structure of your JSON data is the same
-    const name = Object.values(json); // Accessing the "v" data
-
+function maker(error) {
     const ele = document.createElement('div');
-    ele.textContent = `${name}`;
-    div.append(ele);
-}
+    ele.textContent = `${error}`;
+    output.append(ele);
+}   
 
 document.getElementById('xuLyButton')?.addEventListener('click', function(event) {
     event.preventDefault();
