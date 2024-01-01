@@ -5072,6 +5072,12 @@ video {
     font-family: 'regular';
     color: black;
   }
+  @media screen and (max-width: 1024px) {
+    .input-container .checked{
+        font-size: 15px;
+      }
+  }
+
 
 
   .input {
@@ -5260,7 +5266,9 @@ video {
   }
 
   /* VIDEO */
-  
+  .video{
+    padding-top: 0;
+  }
   /* ANIMATION */
   
   .animation{
@@ -5287,7 +5295,7 @@ video {
     font-size: 60px;
     display: inline;
     color:black;
-    padding-right: 1%;
+    padding-right: 2%;
     font-family: 'Mori', sans-serif;
   
   }
@@ -5630,11 +5638,14 @@ video {
   padding-top: 70vh; font-family: 'detail'; font-size: 20px; color: #FFFCE1;
 }
 
+
 @media screen and (max-width: 1024px) {
 	
 .detail-infomation{
     display: none;
   }
+
+
 }
 
 
@@ -5646,6 +5657,7 @@ video {
     display: flex;
     justify-content: center;
   }
+
 
   @media screen and (max-width: 1024px) {
 	.header-section-sponsor{
