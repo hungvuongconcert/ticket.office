@@ -53,6 +53,7 @@ function maker(error) {
 document.getElementById('xuLyButton')?.addEventListener('click', function(event) {
     event.preventDefault();
     var duLieu = document.getElementById('userData').value;
+    sessionStorage.setItem('code',duLieu)
     const qu = `SELECT A WHERE B = '${duLieu}'`;
     const query = encodeURIComponent(qu);
     const url = `${base}&sheet=${sheetName}&tq=${query}`;

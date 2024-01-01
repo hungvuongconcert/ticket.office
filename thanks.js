@@ -5,6 +5,9 @@ const sheetName = 'Data';
  
 const storageData = sessionStorage.getItem('data')
 const data = JSON.parse(storageData)
+const storageCode = sessionStorage.getItem('code')
+const code = JSON.parse(storageCode)
+console.log(code)
 const output = document.querySelector('.output');
  
 
@@ -12,7 +15,7 @@ const output = document.querySelector('.output');
     output.append(div);
     const name = Object.values(data);
     const ele = document.createElement('p');
-            ele.textContent = `${name}`;
+            ele.textContent = `${name} - ${code}`;
             div.append(ele);
    
  

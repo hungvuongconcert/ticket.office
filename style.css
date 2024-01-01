@@ -4935,6 +4935,12 @@ video {
     /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
   }
 
+  @font-face {
+    font-family: 'regular'; /* Provide a name for your font */
+    src: url('/font/MONTSERRAT-REGULAR.OTF') format('opentype');
+    /* You can also provide other font formats like woff2, woff, ttf for better browser compatibility */
+  }
+
 
 
 
@@ -5003,6 +5009,10 @@ video {
   .navbar-nav .nav-link:hover {
     color: #f5a841;
   }
+
+  .nav-item{
+    font-family: 'regular';
+  }
   
   @media screen and (min-width: 1424px) {
     .navbar-nav .nav-item {
@@ -5059,7 +5069,7 @@ video {
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'regular';
     color: black;
   }
 
@@ -5211,7 +5221,7 @@ video {
    /* MAIN */
 
    .main{
-    background-image: url(/material/BG3.png);
+    background-image: url(/material/BG4.png);
     /* background-image: url(/material/Banner-ve-QR.gif); */
     background-position: center;
     height: 91vh;
@@ -5617,7 +5627,7 @@ video {
 
 
 .detail-infomation{
-  padding-top: 60vh; font-family: 'detail'; font-size: 22px; color: #FFFCE1;
+  padding-top: 70vh; font-family: 'detail'; font-size: 20px; color: #FFFCE1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5641,6 +5651,10 @@ video {
 	.header-section-sponsor{
         font-size: 35px;
       }
+
+     .gap{
+        display: none;
+     } 
   }
 /* ----------- PRIVATE CSS ----------- */
    
