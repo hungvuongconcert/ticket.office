@@ -1,4 +1,0 @@
-self.__BUILD_MANIFEST = function (s, c, a, e, t, b) {
-    return {__rewrites: {afterFiles: [], beforeFiles: [], fallback: []}, "/": [c, s, a, e, t, "static/chunks/pages/index-6bef8ebf0e0d40da.js"], "/404": [c, s, a, e, t, "static/chunks/pages/404-625d484fe601eb95.js"], "/_error": ["static/chunks/pages/_error-54de1933a164a1ff.js"], "/blog": [s, b, "static/css/16de3ac56300b979.css", "static/chunks/pages/blog-f603e627508d2526.js"], "/blog/[slug]": [s, b, "static/css/320e9f68de2c3f93.css", "static/chunks/pages/blog/[slug]-840080f3abeac3a2.js"], sortedPages: ["/", "/404", "/_app", "/_error", "/blog", "/blog/[slug]"]};
-  }("static/chunks/876-1625ceb9fcab51bd.js", "static/chunks/ea88be26-b21151d5035ec7c2.js", "static/chunks/79-f97b6b1998da167d.js", "static/chunks/908-a9602e80181eebbd.js", "static/css/94a750743398a46b.css", "static/chunks/303-819f4d274c316915.js"), self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB();
-  
