@@ -5502,12 +5502,21 @@ video {
 }
 
 /* Anything udner 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 726px) {
 	.image-grid {
 		--num-cols: 2;
 		--row-height: 200px;
 	}
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 450px;
+	}
+}
+
   /* TALENT */
  
 
@@ -5668,5 +5677,54 @@ video {
         display: none;
      } 
   }
+
+
+  .youtube {
+    width: 1170px;
+    height: 715px;
+  
+    /* Add other default styles for .youtube here */
+  
+    /* Responsive styles for small devices (phones) */
+    @media only screen and (max-width: 600px) {
+      width: 100%; /* Adjust width for small devices */
+      height: auto; /* Allow height to adjust automatically */
+      /* Adjust other styles for small devices */
+      aspect-ratio: 3/2;
+    }
+  
+    /* Responsive styles for medium devices (tablets) */
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+      width: 100%; /* Adjust width for medium devices */
+      height: auto; /* Allow height to adjust automatically */
+      aspect-ratio: 3/2;
+      /* Adjust other styles for medium devices */
+    }
+  
+    /* Responsive styles for large devices (desktops) */
+    @media only screen and (min-width: 993px) {
+      width: 990px;; /* Reset width for large devices */
+      height: 715px; /* Reset height for large devices */
+      /* Adjust other styles for large devices */
+      aspect-ratio: 3/2;
+    }
+
+    @media only screen and (min-width: 1281px) {
+        width: 1170px; /* Reset width for large devices */
+        height: 715px; /* Reset height for large devices */
+        /* Adjust other styles for large devices */
+        aspect-ratio: 3/2;
+      }
+  }
+  
+
+  .continue{
+    color: white;
+    font-family: 'Main';
+    font-size: 50px;
+  }
+
+  
+  
 /* ----------- PRIVATE CSS ----------- */
    
