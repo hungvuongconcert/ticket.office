@@ -27907,19 +27907,19 @@ textarea.custom-textarea.focusOutline {
 
 @media (min-width:992px) {
     #main-footer .footer-top {
-        padding-bottom: 160px
+        padding-bottom: 60px
     }
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
     #main-footer .footer-top {
-        padding-bottom: 130px
+        padding-bottom: 60px
     }
 }
 
 @media (max-width:767.98px) {
     #main-footer .footer-top {
-        padding-bottom: 100px
+        padding-bottom: 60px
     }
 }
 
@@ -29580,6 +29580,7 @@ section:not([class*=background]):not(.block-embed-image-video):not(.block-richte
         letter-spacing: -.15px
     }
 }
+
 
 @media (min-width:768px) and (max-width:991.98px) {
 
