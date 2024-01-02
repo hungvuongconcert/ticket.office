@@ -98,7 +98,7 @@ h1 {
 
   @media screen and (max-width: 768px) {
     .card {
-      padding: 25px;
+      padding: 20px;
     }
 
   }
@@ -108,7 +108,7 @@ h1 {
     color: #fff;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1224px) {
     .card-footer {
       display: none;
     }
