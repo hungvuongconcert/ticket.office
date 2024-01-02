@@ -5637,9 +5637,7 @@ video {
         transform: translateX(-50%);
         }
 
-    body{
-        overflow-x: hidden;
-    }
+    
 }
 
 
@@ -5724,7 +5722,9 @@ video {
     font-size: 50px;
   }
 
-  
+  html{
+    overflow-x: hidden;
+  }
   
 /* ----------- PRIVATE CSS ----------- */
    
