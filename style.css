@@ -30,7 +30,7 @@ html {
 
 body {
     margin: 0;
-    line-height: inherit
+    line-height: inherit;
 }
 
 hr {
@@ -5227,7 +5227,7 @@ video {
    /* MAIN */
 
    .main{
-    background-image: url(/material/BG4.webp);
+    background-image: url(/material/BG-05.webp);
     /* background-image: url(/material/Banner-ve-QR.gif); */
     background-position: center;
     height: 91vh;
@@ -5239,6 +5239,8 @@ video {
     /* Adjust styles for screens with a maximum width of 600px */
     .main {
         object-fit: contain;
+        width: 100%; /* Adjust the width for smaller screens */
+        height: 400px; /* Adjust the height for smaller screens */
     }
    }
     @media screen and (min-width: 1024px) {
