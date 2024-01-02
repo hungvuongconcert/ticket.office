@@ -5510,10 +5510,10 @@ video {
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 	.image-grid {
 		--num-cols: 2;
-		--row-height: 450px;
+		--row-height: 550px;
 	}
 }
 
