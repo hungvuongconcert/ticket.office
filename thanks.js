@@ -4,14 +4,15 @@ const sheetName = 'Data';
 
 const storageData = sessionStorage.getItem('data');
 const data = JSON.parse(storageData);
-const storageCode = sessionStorage.getItem('code');
-const code = JSON.parse(storageCode);
+
 const output = document.querySelector('.output');
 
 const div = document.createElement('p');
 output.append(div);
 
-const name = Object.values(data);
+const name = data.tên;
+const code = data.mãsearch
+const phone = data.sốđiệnthoại
 const ele = document.createElement('p');
-ele.innerHTML = `Họ và Tên: ${name} <br> Mã số Vé: ${code} <br> Số điện thoại: `;
+ele.innerHTML = `Họ và Tên: ${name} <br> Mã số Vé: ${code} <br> Số điện thoại: ${phone} `;
 div.append(ele);
