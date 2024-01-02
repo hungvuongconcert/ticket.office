@@ -5676,7 +5676,6 @@ video {
      } 
   }
 
-
   .youtube {
     width: 1170px;
     height: 715px;
@@ -5685,42 +5684,36 @@ video {
   
     /* Responsive styles for small devices (phones) */
     @media only screen and (max-width: 600px) {
-      width: 100%; /* Adjust width for small devices */
-      height: auto; /* Allow height to adjust automatically */
-      /* Adjust other styles for small devices */
+      width: 100%;
+      height: auto;
       aspect-ratio: 3/2;
+      /* Adjust other styles for small devices */
     }
   
     /* Responsive styles for medium devices (tablets) */
     @media only screen and (min-width: 601px) and (max-width: 992px) {
-      width: 100%; /* Adjust width for medium devices */
-      height: auto; /* Allow height to adjust automatically */
+      width: 100%;
+      height: auto;
       aspect-ratio: 3/2;
       /* Adjust other styles for medium devices */
     }
   
     /* Responsive styles for large devices (desktops) */
-    @media only screen and (min-width: 993px) {
-      width: 990px;; /* Reset width for large devices */
-      height: 715px; /* Reset height for large devices */
-      /* Adjust other styles for large devices */
+    @media only screen and (min-width: 993px) and (max-width: 1280px) {
+      width: 100%;
+      height: auto;
       aspect-ratio: 3/2;
+      /* Adjust other styles for large devices */
     }
-
+  
     @media only screen and (min-width: 1281px) {
-        width: 1170px; /* Reset width for large devices */
-        height: 715px; /* Reset height for large devices */
-        /* Adjust other styles for large devices */
-        aspect-ratio: 3/2;
-      }
+      width: 1170px;
+      height: 715px;
+      /* Adjust other styles for larger devices */
+    }
   }
   
-
-  .continue{
-    color: white;
-    font-family: 'Main';
-    font-size: 50px;
-  }
+  
 
   html{
     overflow-x: hidden;
