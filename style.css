@@ -5143,7 +5143,7 @@ video {
     background-size: cover;
     background-size: contain;
     padding-bottom: 10%;
-    background-image:url(material/lightbackground.png);
+    background-image:url(material/lightbackground.webp);
   }
   
  
@@ -5221,13 +5221,13 @@ video {
   
   /* VIDEO */
  .video{
-    background:url(material/BG\ \(1\).png)
+    background:url(material/backgroundd.webp)
  }
 
    /* MAIN */
 
    .main{
-    background-image: url(/material/BG4.png);
+    background-image: url(/material/BG4.webp);
     /* background-image: url(/material/Banner-ve-QR.gif); */
     background-position: center;
     height: 91vh;
@@ -5470,7 +5470,7 @@ video {
  /* TALENT */
 
  .talent{
-    background-image: url(material/BG\ \(1\).png);
+    background-image: url(material/backgroundd.webp);
     
  }
  .image-grid {
