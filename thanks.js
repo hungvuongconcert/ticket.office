@@ -14,5 +14,5 @@ const name = data.tên;
 const code = data.mãsearch
 const phone = data.sốđiệnthoại
 const ele = document.createElement('p');
-ele.innerHTML = `Họ và Tên: ${name} <br> Mã số Vé: ${code} <br> Số điện thoại: ${phone} `;
+ele.innerHTML = `Họ và Tên: ${name} <br> Mã số Vé: ${code} <br> Số điện thoại: 0${phone} `;
 div.append(ele);
